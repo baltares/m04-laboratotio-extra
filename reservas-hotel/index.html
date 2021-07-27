@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4 - Laboratorio Extra - Reservas Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-center">
+        <header>
+            <h3>Reservas hotel</h3>
+        </header>
+        <main>
+            <form class="container" id="form-hotel">
+                <div class="container-2">
+                    <label class="col-60 label-text" for="input-room-class">Seleccione el tipo de habitación</label>
+                    <select class="col-40 input-field" name="input-room-class" id="input-room-class"
+                        form="form-hotel">
+                        <option value="standard" selected="selected">Standard</option>
+                        <option value="junior-suite">Junior Suite</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+                <div class="container-2">
+                    <label class="col-60 label-text" for="input-ocupation">Seleccione la ocupación de la
+                        habitación</label>
+                    <select class="col-40 input-field" name="input-ocupation" id="input-ocupation"
+                        form="form-hotel">
+                        <option value="individual">Individual</option>
+                        <option value="doble" selected="selected">Doble</option>
+                        <option value="triple">Triple</option>
+                    </select>
+                </div>
+                <div class="container-2">
+                    <label class="col-60 label-text" for="input-nights">Número de noches</label>
+                    <input class="col-40 input-field" type="number" name="input-nights" id="input-nights"
+                        min="1" max="365" value="1" step="1" pattern="\d*">
+                </div>
+                <div class="container-2">
+                    <label class="col-60 label-text" for="input-parking">Noches de parking</label>
+                    <input class="col-40 input-field" type="number" name="input-parking"
+                        id="input-parking" min="0" max="365" value="0" step="1">
+                </div>
+
+                <div class="container-2">
+                    <div class="col-60 label-text">¿Va a hacer uso del SPA?:</div>
+                    <div class="col-40 container-flex">
+                        <label for="checkbox-spa-yes"> Sí</label>
+                        <input class="checkbox-spa" type="radio" id="checkbox-spa-yes"
+                            name="checkbox-spa" value=true>
+                        <label for="checkbox-spa-no"> No</label>
+                        <input class="checkbox-spa" type="radio" id="checkbox-spa-no" name="checkbox-spa"
+                            value=false>
+                    </div>
+                </div>
+
+                <div class="container-2 container-result">
+                    <div class="col-60 label-text">COSTE TOTAL DE LA ESTANCIA</div>
+                    <div class="col-40 result-field"><span class="result" id="result">0</span><span>€</span></div>
+                </div>
+                <button class="button-class" type="button" id="button-calculate">CALCULAR</button>
+            </form>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

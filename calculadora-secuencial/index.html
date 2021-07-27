@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4 - Laboratorio Extra - Calculadora secuencial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-center">
+        <header>
+            <h3>Calculadora</h3>
+        </header>
+        <main>
+            <form class="container">
+                <div class="container-2">
+                    <label class="label-text" for="input-number">Operación a realizar:</label>
+                    <input class="input-field" type="text" name="input-number" id="input-number">
+                </div>
+                <div class="container-2 container-flex">
+                    <button type="button" class="button-class button-operation" id="button-add">+</button>
+                    <button type="button" class="button-class button-operation" id="button-sub">-</button>
+                    <button type="button" class="button-class button-operation" id="button-mul">*</button>
+                    <button type="button" class="button-class button-operation" id="button-div">/</button>
+                    <button type="button" class="button-class" id="button-res">=</button>
+                </div>
+                <hr>
+                <div class="container-2">
+                    <div class="label-text">Resultado:</div>
+                    <h3 class="result-field" id="result"></h3>
+                </div>
+            </form>
+        </main>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
